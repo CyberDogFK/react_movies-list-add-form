@@ -64,30 +64,6 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
   const imdbUrlValidation = () =>
     urlValidation(imdbUrl, setImdbUrlValid, 'Imdb URL is not valid');
 
-  // const imgUrlValidation = (): string => {
-  //   if (!pattern.test(imgUrl)) {
-  //     setIsUrlValid(false);
-  //
-  //     return 'Image URL is not valid';
-  //   }
-  //
-  //   setIsUrlValid(true);
-  //
-  //   return '';
-  // };
-  //
-  // const imdbUrlValidation = (): string => {
-  //   if (!pattern.test(imdbUrl)) {
-  //     setImgIsUrlValid(false);
-  //
-  //     return 'Imdb URL is not valid';
-  //   }
-  //
-  //   setImgIsUrlValid(true);
-  //
-  //   return '';
-  // };
-
   const isAddButtonDisabled = () => {
     return (
       !title.trim() ||
